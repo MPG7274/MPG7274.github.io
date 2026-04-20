@@ -1,75 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Welcome to My GitHub Portfolio</title>
+<meta charset="UTF-8">
+<title>Michael Guzaitis | Portfolio</title>
+
 <style>
+    /* ===== GLOBAL STYLES ===== */
     body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        background-color: #f4f4f4;
-    }
-    h1, h2 {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
         color: #333;
     }
-    section {
-        background: white;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+
+    /* ===== HEADER ===== */
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        color: white;
     }
+
+    header h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    /* ===== SECTION CARDS ===== */
+    section {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    section:hover {
+        transform: translateY(-3px);
+    }
+
+    h2 {
+        color: #1e3c72;
+        border-left: 5px solid #2a5298;
+        padding-left: 10px;
+    }
+
+    /* ===== LINKS ===== */
     a {
+        color: #2a5298;
+        font-weight: bold;
         text-decoration: none;
     }
+
+    a:hover {
+        color: #1e3c72;
+        text-decoration: underline;
+    }
+
+    /* ===== BUTTON STYLE ===== */
     .button {
         display: inline-block;
-        padding: 10px 15px;
-        background-color: #0066cc;
+        padding: 12px 18px;
+        background: linear-gradient(135deg, #2a5298, #1e3c72);
         color: white;
-        border-radius: 5px;
+        border-radius: 8px;
         margin-top: 10px;
+        transition: 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
+
     .button:hover {
-        background-color: #004a99;
+        background: linear-gradient(135deg, #1e3c72, #0f2447);
+        transform: scale(1.05);
+    }
+
+    /* ===== CONTACT BOX ===== */
+    .contact {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        color: white;
+        opacity: 0.8;
     }
 </style>
 </head>
 
 <body>
 
-<h1>Welcome to My Portfolio</h1>
-<p>This is my personal portfolio showcasing my work.</p>
+<header>
+    <h1>👋 Welcome to My Portfolio</h1>
+    <p>Computer Science • Game Design • Creative Developer</p>
+</header>
 
 <section>
-<h2>About Me</h2>
-<p>
-My name is Michael Guzaitis and I am a Computer Science major with a minor in Video Game Design graduating in May of 2026. 
-I also have experience with photography and Photoshop. I enjoy creating things with technology and look forward to gaining more experience in the future.
-</p>
+    <h2>💡 About Me</h2>
+    <p>
+        My name is <strong>Michael Guzaitis</strong>, and I am a Computer Science major with a minor in Video Game Design,
+        graduating in May of 2026. I also have experience in photography, Photoshop, and digital design.
+        I enjoy building creative projects using technology and continuously expanding my skills in software development and design.
+    </p>
 </section>
 
 <section>
-<h2>My GitHub Repositories</h2>
-<p>
-<a href="https://github.com/MPG7274?tab=repositories" target="_blank">
-Visit My GitHub Repositories
-</a>
-</p>
+    <h2>💻 My GitHub</h2>
+    <p>
+        Explore my projects, code, and development work:
+    </p>
+    <a href="https://github.com/MPG7274?tab=repositories" target="_blank">
+        🔗 Visit My GitHub Repositories
+    </a>
 </section>
 
 <section>
-<h2>Resume</h2>
-<p>You can download my resume below:</p>
+    <h2>📄 Resume</h2>
+    <p>You can download my resume below:</p>
 
-<a href="Michael_Guzaitis_Resume.pdf" download class="button">
-Download Resume (PDF)
-</a>
+    <a href="Michael_Guzaitis_Resume.pdf" download class="button">
+        ⬇ Download Resume (PDF)
+    </a>
 </section>
 
 <section>
-<h2>Contact Me</h2>
-<p>Email: michael.guzaitis27@gmail.com</p>
+    <h2>📬 Contact Me</h2>
+    <div class="contact">
+        📧 Email: <a href="mailto:michael.guzaitis27@gmail.com">michael.guzaitis27@gmail.com</a>
+    </div>
 </section>
+
+<footer>
+    © 2026 Michael Guzaitis • Built with HTML & CSS
+</footer>
 
 </body>
 </html>
